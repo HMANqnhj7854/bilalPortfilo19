@@ -41,6 +41,8 @@ h2.t::before{content:"> ";color:var(--cy);font-family:var(--mono)}
 p{max-width:64ch;margin:0 0 12px}
 .skills{display:flex;flex-wrap:wrap;gap:10px}
 .sk{font:15px var(--mono);color:var(--txt);background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--cy);padding:8px 14px}
+.env{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.env h3{margin:0 0 14px;font:14px var(--mono);color:var(--cy);font-weight:400;text-transform:uppercase;letter-spacing:.04em}
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .pr h3{margin:0 0 6px;font-size:24px}
 .pr .m{font:14px var(--mono);color:var(--dim);margin-bottom:12px}
@@ -68,8 +70,8 @@ footer a{color:var(--cy)}
 </head>
 <body>
 <header class="bar">
-<div><span class="dot"></span><b>ctOS</b> // profil chargé</div>
-<nav aria-label="Navigation"><a href="#presentation">Présentation</a><a href="#competences">Compétences</a><a href="#projets">Projets</a><a href="#cv">CV</a></nav>
+<div><span class="dot"></span><b>profil chargé</b></div>
+<nav aria-label="Navigation"><a href="#presentation">Présentation</a><a href="#competences">Compétences</a><a href="#environnement">Environnement</a><a href="#projets">Projets</a><a href="#cv">CV</a></nav>
 </header>
 <main>
 <div class="hero">
@@ -105,6 +107,19 @@ footer a{color:var(--cy)}
 <span class="sk">Pare-feu et sécurité</span>
 <span class="sk">Administration Linux</span>
 <span class="sk">Simulation (Packet Tracer)</span>
+</div>
+</section>
+
+<section id="environnement">
+<h2 class="t">Environnement de travail</h2>
+<div class="env">
+<article class="card"><h3>Virtualisation</h3><div class="skills"><span class="sk">VirtualBox</span><span class="sk">Réseaux NAT, interne et bridged</span></div></article>
+<article class="card"><h3>Systèmes d'exploitation</h3><div class="skills"><span class="sk">Debian 13</span><span class="sk">Windows 10</span></div></article>
+<article class="card"><h3>Réseau et administration</h3><div class="skills"><span class="sk">nano</span><span class="sk">ping</span><span class="sk">SSH</span><span class="sk">Packet Tracer</span><span class="sk">Wireshark</span></div></article>
+<article class="card"><h3>Supervision</h3><div class="skills"><span class="sk">Nagios 4</span></div></article>
+<article class="card"><h3>Documentation</h3><div class="skills"><span class="sk">Word</span><span class="sk">LibreOffice</span></div></article>
+<article class="card"><h3>Versionnage et hébergement</h3><div class="skills"><span class="sk">GitHub</span><span class="sk">GitHub Pages</span></div></article>
+<article class="card"><h3>Cadre de travail</h3><div class="skills"><span class="sk">Lycée Lamartine, Mâcon</span><span class="sk">Travail en binôme</span></div></article>
 </div>
 </section>
 
